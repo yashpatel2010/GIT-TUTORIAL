@@ -1,0 +1,179 @@
+Git tutorials:-
+
+FIRST OF ALL WRITE THE COMMAND [GIT INIT]
+
+
+
+1) to configure your email id with git
+->open the folder where you initialize the git and open the terminal at that location and write 
+  the command---->[git config --global user.name "Yash"]
+-->and also configure your email id with the command
+   ->[git config --global user.email "yashpatel02010@gmail.com"]
+
+
+
+
+2)to print all the details
+--> [git --list] 
+
+
+
+
+3)to see the name and email
+-->[git config user.name],[git config user.email]
+
+
+
+
+4)Track your first project
+-->in git intialiaze folder create {first.txt} file and also make xl file named {myexal.xl}
+-->command [git status]
+-->make git repo.-->[git init]
+-->give all files in staging area->[git add --a]
+-->to commit the files ->[git commit -m "Initial commit"]
+-->history of commits ->[git log]
+after add data in txt file and run command ->[git status].
+after this put it in the staging area -> [git add first.txt]
+after this commit the file -> [git commit -m "change first.txt for better design"]
+
+
+
+
+5) To destroy or remove the git repo. type command--> [rm -rf .git]
+
+
+
+6)to download the github repo in our computer
+--> copy the url or the repo. which is in the github and comeback to our terminal and write the command
+    [git clone paste the url which you copy]
+--> to change the name of download file write the command [git clone {url} {write_name}]->curly brace is not there
+
+
+
+
+7)first time file add kri didhi commit krva ne trt change kryo to commit ma jse to pela ni j pachhithi add kreli nai jay
+  ne pchhi git add kria etle jse e new change kreli file.
+
+
+
+
+8)repo ignore krva
+->apde koi program hoy ne eni sathe error.log file pn generate thay 6e ne ene apde track krvani koi jarur nahi so ene apde drvkhte
+  ignore krvi pde apda kam ni nhi etle to apde e file ne .gitignore nam ni file banavine ema error.log lkhi daia etle error.log ma 
+  modification thase ene ignore krse ne apnne koi muskeli nai pde
+--> avu krva mate touch command thi .gitignore nam ni file banavi devi ne ema apdi error vali file generate thay 6e ne enu nam lakhi
+    devu error.log----> a krine e error.log file na modification ne ignore krse.
+
+--> jo bau bdhi (.log) files generate thai jti hoy to (.gitignore) file ma jaine (*.log) lkhi devanu etle jetli (.log) files generate
+    thase e badi ignore thase etle apnne disturb nhi kre e bdhi files.
+
+-->apdi git repo. ma koi (dir) namnu folder 6e and e folder ne apde ignore krvu 6e to (.gitignore) file ma jaine (dir/) lkhi devu
+   etle e dir nam ni directory na modification ne ignore krse.
+
+-->hve apde koi biju folder banavia ne ema (dir) name ni file hse to e pn ignore thai jse to apde khali bar ni dir ne j ignore krvu
+   hoy to (.gitignore) file ma (/dir/) write krvu to khali outer dir name nu folder hse ene j ignore krse bija koi folder na ander
+   dir name nu folder hse ene ignoe nai kre.
+
+-->Inshort apde je ignore krvu hoy eno path api devo git folder thi(static/dir) a type no
+
+
+
+
+9) apde jyare staging area ma files ne nakhi didhi pchhi file ne modified kri didhi to apde [git status] run krisu to bnne files batavse
+   1st stagging area ma hoy e and 2nd modified hoy e file.
+  ->hve apde bnne files vche no difference jovo hoy to ke su modified kry e to command-->[git diff]    a command e difference batavse
+    modified and staging area ma hoy e files vache.
+---->hve apde a modified file ne pn nakhi didhi staging area ma pn hji apde pela ni staging area ni file ne apde nvi file staging
+     area ma add kri etle e old file update thai jse to old file and new file vche no difference jova mate command
+     [git diff --staged]
+
+
+
+
+10)staging area ne skip krvo hoy ne sidhi files commit krvi hoy to command--->[git commit -a -m "this is showing error"]
+
+
+
+11)->file ne delete krvi hoy to command---> [git rm 'file_name']
+   ->file ne rename krvi hoy to command---->[git mv 'old_file_name' 'new_file_name']
+   ->je file already treck krta hoy ne ene hve apde track nhi krvi to apde ene .gitignore ma nakhi ne .gitignore ne commit pn kri didhu
+     pn hji pn peli treck krta ta e file ma modification thase to e modified ma batavse to avi tracked files ne pchhi thi ignore krva
+     mate command--->[git rm --cached 'file_name']
+
+
+
+
+12)apde koi git repo clone kri pchhi eni commits ne su su changes thaya 6e e bdhu jova mate command-->[git log -p] or [git log -p -3]
+   a commands thi repo ma commit kone kone krya e bdhu batavse ne ema su changes 6e e bdhu batavse
+
+-->su su changes thaya e bdhu jova mate ne kai file ma ketli line add thai ke remove thai e bdhi details jova mate-->[git log --stat]
+
+--> badha commits ni ek line jova mate a command-->[git log --pretty=oneline]
+ a bdhu Q press krine bar nikli sakay
+--> ava bija pn commands 6e jevake-->[git log --pretty=short]
+
+-->time ne preference apine details jovi hoy to-->[git log --since=2.days]-> ama last 2 days ni commit batavse
+   ama j [since log since=2.months] or [since log since=2.years] ava pn kri sakay
+
+-->https://git-scm.com/docs/git-log----> a website pr %h ne bdhu 6e nee e one by one niche na command ma implement krvu so individual
+   information author ni ne bdhi joi sakay command-->[git log --pretty=format:"%h -- %an"] <-- ama author nu name batavse
+   and author nu email and name jova mate command-->[git log --pretty=format:"%h -- %ae"]
+
+-->hve apde koi file ne change kri clone kreli repo mathi to eni je pelani commit koik e kri hti eni commit ne change krine apde 
+   apdi commit add krvi hoy to command-->[git commit --amend]<-- a command thi vim editor avse ema sauthi upr j batavtu hse ke a
+   change kryu 6e evo commit message hse to ena agl---> yash patel commit  <------   ***a krine file ne staging area ma nakhi devi khas 
+   nondh 6e a***
+   
+   a vim editor ma [i] press krine insert kri sakay 6e ne jyare apde changes kri laia etle [esc] press krvu ne bar niklva mate [:wq] press
+    krvu
+ atlu krya pchhi log joi levu ne verify kri levu ke apda changes avi gaya 6e ke nai em command-->[git log -p -2]
+
+
+
+13)Koi pn staging area ma files hoy ene pachhi UNSTAGE krva mate command-->[git restore --staged file_name]
+--> bhul thi apde koi file ma data modified kri didho pn e modified nto krvano pn bhuthi thai gayo to ene pachhu pela jevi krva file
+    ne command -->[git checkout -- file_name]<-- pela ni file pachhi avi jse
+--> apde kyak bau bdhi files ne modified kri didhi to badha ne pela jevi krta krta bau var lage to bdha ne eksathe pela na jevi krva
+    mate command--[git checkout -f]
+
+
+
+
+14)WORKING WITH REMOTE SERVER
+-->Github kholvu ne ema account banavvu pchhi account banavya bad + hoy tya click krvu and bdhi j details fill krvi ne public pr click
+   rakhine create repository pr click kri devu..
+
+-->Hve apde gitbash kholvu apda initialise  kryu 6e e folder ma hve e remote ma file ne push krva mate ek remote banavvu pde to
+   to apde github ma je remote nu url batave 6e e copy krine gitbash ma past kri devu apde nicheni link 6e
+    [git remote add origin https://github.com/yashpatel2010/repo_name.git]
+
+-->hve jova mate ke apdu remote create thayu ke nhi to ena mate command-->[git remote]
+   another command url jova push ne pull na--->[git remote -v]
+
+-->hve apde git repo ma push krva mate a command-->[git push -u origin master]<-- pn a command e error batavse ke tmne permission
+   nthi em to permission leva mate -->settings-->SSH and GPG keys-->new SSH key<-- ama jaine badhi details fill kri devi hve ama ek
+   SSH key magse to SSH key leva mate google ma search krvu ke-->[ssh keys github] to je apnne url mle website ma jaine ene copy
+   krine gitbash ma paste krvu ne sample email id ma apdu email id nakhi devu. apda case ma nichenu url 6e
+   [ssh-keygen -t rsa -b 4096 -C "yashpatel02010@gmail.com"]
+   a command ma bdhu yes yes apine enter krvu mage to ne bdhu empty 6odi devu ne enter kri devu
+
+-->Hve apdo SSH proper run kre 6e ke nai e jova pn command website ma apelo 6e-->[eval $(ssh-agent -s)]
+
+-->Hve identity add krva mate command-->[ssh-add ~/.ssh/id_rsa]<-- a command thi identity add thai jse 
+
+--> Hve SSH key github  ma add krva mate command-->`1)
+    And hve bijo command a run krta SSH key batavidese-->[tail ~/.ssh/id_rsa.pub]
+
+--> anu je output mle ene copy krine pelu github ma -->setting-->SSH and GPG keys--> ama SSH key mage 6e tya paste kri devu and 
+    press on -->add SSH key<--
+
+--> and hve apde github ma code push kri skia 6ia pelo upr na command ma error avti ti ne premission ni e nai ave
+    command-->[git push -u origin master]   a command thi apdi repo ma push thai jse data ne a bdhu apde github home pr e repo ma
+     jaine joi sakay 6e
+--> hve apde kai pn modification krine commit krine github ma push kri devi a command thi-->[git push -u origin master]
+
+
+
+
+
+
