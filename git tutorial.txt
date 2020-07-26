@@ -103,6 +103,7 @@ after this commit the file -> [git commit -m "change first.txt for better design
 
 
 
+
 12)apde koi git repo clone kri pchhi eni commits ne su su changes thaya 6e e bdhu jova mate command-->[git log -p] or [git log -p -3]
    a commands thi repo ma commit kone kone krya e bdhu batavse ne ema su changes 6e e bdhu batavse
 
@@ -131,6 +132,7 @@ after this commit the file -> [git commit -m "change first.txt for better design
 
 
 13)Koi pn staging area ma files hoy ene pachhi UNSTAGE krva mate command-->[git restore --staged file_name]
+   and khas jo koi file modified thai gayi ne ena chages dur krva hoy to to a j command pn -->[git restore file_name]<-- stage na hoy ena mate
 --> bhul thi apde koi file ma data modified kri didho pn e modified nto krvano pn bhuthi thai gayo to ene pachhu pela jevi krva file
     ne command -->[git checkout -- file_name]<-- pela ni file pachhi avi jse
 --> apde kyak bau bdhi files ne modified kri didhi to badha ne pela jevi krta krta bau var lage to bdha ne eksathe pela na jevi krva
@@ -186,3 +188,20 @@ after this commit the file -> [git commit -m "change first.txt for better design
   --> bdha command yaad thi be cote ma lkhva to error nai thay
 
 -->Hve last commit jova mate short last lkhia to batave evu krva mate-->[git config --global alias.last 'log -p -1']
+
+
+
+16)Hve apde new branch banavvi 6e koi moto project 6e to apde a command apvo-->[git checkout -b new_branch_name]
+--> hve commit krvu-->[git add .]-->[git commit -m "in a new branch']
+-->hve apde pa6u master branch ma switch krvu hoy to-->[git checkout master]
+-->hve master mathi pachhu apdi branch ma switch krvu hoy to-->[git checkout branch_name]
+-->hve apde branches jovi hoy ketli 6e ne kaya kaya nam ni to command-->[git branch]
+
+
+
+17)MERGE KRVA
+-->master branch ma switch krine command-->[git merge branch_name]
+
+
+
+
