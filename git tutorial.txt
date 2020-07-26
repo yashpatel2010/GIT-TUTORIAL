@@ -175,5 +175,14 @@ after this commit the file -> [git commit -m "change first.txt for better design
 
 
 
+15) GIT ALIAS
+-->apde ani help thi mota command ne nvu nanu nam api skia nanu evu etle apnne type krvu shelu pde
 
+-->A command run krta apde status akhu lkhvane bdle st lkhisu to pn chalse-->[git config --global alias.st status]
 
+-->short ma commit krva mate ci lkhine to --->[git config --global alias.ci commit]
+
+-->short ma unstage krva mate unstage krvathi    [git config --global alias.unstage 'restore --staged --']
+  --> bdha command yaad thi be cote ma lkhva to error nai thay
+
+-->Hve last commit jova mate short last lkhia to batave evu krva mate-->[git config --global alias.last 'log -p -1']
