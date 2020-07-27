@@ -204,4 +204,32 @@ after this commit the file -> [git commit -m "change first.txt for better design
 
 
 
+18)RESOLVING MERGE CONFLICTS
+-->apde jyare koi changes kreli branch merge krisu etle ek issue batavse ke tamare master no change rakhvo 6e ke tamari biji branch
+   no change rakhvo 6e to apde e file ne kholi ne apde je rakhvu hoy e rakhi skia etle git a bdhu dhyan rakhe ne apnne facility ape
+
+-->hve apde bdhi j branch and e bdhani last commit jovi hoy to command---->[git branch -v]
+
+-->hve apde bau bdhi branch banavi to kai branch merge 6e ne kai branch merge nhi e jova command-->[git branch --merged]
+   and unmerge branches jova mate command-->[git branch --no-merged]
+
+-->Hve apde je branch ne merge na kri hoy ne ene delete krta hoy etle ek error avse ke tme hji a branch merge nhi kri ne delete kro
+   6o em to  ex:- apde delete krvano try kria etle command-->[git branch -d no_merged_branch_name]
+    a upr no command error apse ke tme hji a branch merge nhi kri ne tme delete kro 6o to tamare delete krvi hoy to small (d) na 
+    bdle capital (D) kro to delete kri sakase to apde a command ma capital D kri daisu to unmerge branch delete kri sakase
+    command-->[git branch -D no_merged_Branch_name]
+
+
+
+19)PUSHING GIT BRANCHES REMOTE REPO
+-->apde koi new branch banavi hoy ene merge krya vgr push krvi hoy git hub pr to kri sakay command-->[git push origin branch_name]
+-->hve apde a branch ne github prthi delete krvi hoy to command-->[git push -d origin branch_name]
+
+
+
+
+
+
+
+
 
